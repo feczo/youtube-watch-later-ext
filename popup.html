@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Playlist Updates</title>
+  <script src="playlist.js"></script>
+  </head>
+  <body>
+    <div id="login-container" class="pre-auth">This application requires access to your YouTube account.
+      Please <a href="#" id="login-link">authorize</a> to continue.
+    </div>
+    <div id="buttons">
+      <label>Video Id: <input id="video-id" value='6HfuVrQhykE' type="text"/></label><button onclick="addVideoToPlaylist()">Add to current playlist</button>
+    </div>
+    <h3>Status: <span id="playlist-title"></span></h3>
+    <p id="playlist-description"></p>
+    <div id="playlist-container">
+      <span id="status">None</span>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script src="playlist.js"></script>
+    <script src="auth.js"></script>
+  </body>
+</html>
