@@ -4,7 +4,6 @@
   "name": "Watch Later",
   "description": "This extension demonstrates a browser action with kittens.",
   "version": "1.0",
-  "key":"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAscXUiBmmJnm8ZrnxwOkDG8QZGqlPa8RACbdJ9IEtvyw3qZIy1fUaxP0M2bbtRHuI0W1WPVGGqaMN35oIltTIcvuHnnOtChoeVE/KVS/YRNdX7sCw2c0nTFE8suULNIZWs85Ruwov6knphIhcqs81+MnSW037NyUyQ37F2cbn1GuKhChINhtK0jGmd6cbRJe31dN/4LfINseL+Mp0tyeY26zitA5NJLr4IcL1yb//mnWvt3dMl2MRNZeQxWquYVzSGVmp8Z6abi8rsyAeB7sdmiL4g+5Z7ENAvAagGH7pY6Bjt5tsBU94O8QxgOZIKkJ9Js4e0khgdDc/tSGZgWnH0QIDAQAB",
   "permissions": [
     "identity", "contextMenus", "http://*/*", "https://*/*" 
   ],
@@ -19,8 +18,11 @@
      "scripts": ["background.js", "restclient.js"]
   },
   "browser_action": {
-    "default_icon": "icon.png",
+    "default_icon": "icons/later.png",
     "default_popup": "popup.html",
     "default_title": "Watch Later"
-  }
+  },
+  "icons": { "16": "icons/later.png",
+           "48": "icons/later48.png",
+          "128": "icons/later.png" }
 }
